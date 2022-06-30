@@ -6,13 +6,9 @@ const Item = ({ card }) => {
 
   const { name, img, options } = card;
 
-  const setToTrue = () => {
-    setShowLogo(true);
-  };
-
   const handleClick = () => {
     setShowLogo(!showLogo);
-    setTimeout(setToTrue, 3000);
+    setTimeout(() => setShowLogo(true), 3000);
   };
 
   return (
